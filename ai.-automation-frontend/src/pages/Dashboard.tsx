@@ -8,7 +8,7 @@ type Health = { status: string; time: string };
 export function Dashboard() {
     const { data, isLoading, isError } = useQuery({
         queryKey: ["health"],
-        queryFn: () => api<Health>("/api/health"),
+        queryFn: () => api<Health>("api/v1/health"),
     });
 
 

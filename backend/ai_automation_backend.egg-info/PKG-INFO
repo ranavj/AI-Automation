@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: ai-automation-backend
+Version: 0.1.0
+Summary: FastAPI backend for AI+Automation
+Requires-Python: >=3.10
+Requires-Dist: fastapi==0.120.3
+Requires-Dist: uvicorn[standard]==0.38.0
+Requires-Dist: pydantic==2.12.3
+Requires-Dist: pydantic-settings==2.11.0
+Requires-Dist: python-dotenv==1.2.1
+Requires-Dist: sqlalchemy[asyncio]==2.0.44
+Requires-Dist: asyncpg==0.30.0
+Requires-Dist: psycopg2-binary==2.9.11
+Requires-Dist: alembic==1.17.1
+Requires-Dist: httpx==0.28.1
+Requires-Dist: python-jose[cryptography]==3.4.0
+Requires-Dist: passlib[bcrypt]==1.7.4
+Requires-Dist: celery==5.5.3
+Requires-Dist: redis==7.0.1
+Requires-Dist: python-multipart==0.0.20
+Requires-Dist: loguru==0.7.3
+Provides-Extra: dev
+Requires-Dist: pytest==8.4.2; extra == "dev"
+Requires-Dist: pytest-asyncio==1.2.0; extra == "dev"
+Requires-Dist: anyio==4.11.0; extra == "dev"
+Requires-Dist: ruff==0.14.3; extra == "dev"
+Requires-Dist: black==25.9.0; extra == "dev"
+Requires-Dist: pre-commit==4.3.0; extra == "dev"

@@ -5,7 +5,7 @@ import type { Pipeline, ParseResult } from "../types";
 
 export function useParsePipeline() {
     return useMutation({
-        mutationFn: (p: Pipeline) => api<ParseResult>("/api/workflows/parse", {
+        mutationFn: (p: Pipeline) => api<ParseResult>("api/v1/workflows/parse", {
             method: "POST",
             body: JSON.stringify(p),
         }),

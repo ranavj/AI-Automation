@@ -4,7 +4,7 @@ import { api } from "../lib/http";
 
 export function Workflows() {
     const { mutate, data, isPending } = useMutation({
-        mutationFn: (payload: any) => api("/api/workflows/parse", {
+        mutationFn: (payload: any) => api("api/v1/workflows/parse", {
             method: "POST",
             body: JSON.stringify(payload),
         }),
